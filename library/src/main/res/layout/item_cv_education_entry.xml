@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <TextView
+        android:id="@+id/tv_accolade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/spacing_xlarge"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        tools:text="Accolade" />
+
+    <TextView
+        android:id="@+id/tv_education_institution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_accolade"
+        android:layout_alignStart="@id/tv_accolade"
+        android:layout_below="@id/tv_accolade"
+        android:layout_gravity="center_vertical"
+        tools:text="Educational Institution" />
+
+    <TextView
+        android:id="@+id/tv_completion_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_education_institution"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/tv_education_institution"
+        android:layout_toRightOf="@id/tv_education_institution"
+        android:paddingLeft="@dimen/spacing_small"
+        android:paddingStart="@dimen/spacing_small"
+        tools:text="[Year]" />
+</RelativeLayout>

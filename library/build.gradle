@@ -8,10 +8,14 @@ android {
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
-        versionName "1.0"
+        versionName "0.1.0"
     }
 }
 
 dependencies {
     compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:design:23.1.0'
+    compile 'com.android.support:palette-v7:23.1.0'
+    compile 'com.hannesdorfmann:adapterdelegates:1.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }
