@@ -4,6 +4,7 @@ import android.joeamrhein.library.CVDetail;
 import android.joeamrhein.library.CompanyTitle;
 import android.joeamrhein.library.EducationEntry;
 import android.joeamrhein.library.MobileCVActivity;
+import android.joeamrhein.library.PlayStoreLink;
 import android.joeamrhein.library.SectionTitle;
 import android.joeamrhein.library.WorkHighlightEntry;
 import android.os.Bundle;
@@ -28,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
     public static ArrayList<CVDetail> createExampleDetails() {
         ArrayList<CVDetail> details = new ArrayList<>();
+
+        details.add(new SectionTitle("Android Apps"));
+
+        details.add(new PlayStoreLink("https://lh3.googleusercontent.com/DKoidc0T3T1KvYC2stChcX9zwmjKj1pgmg3hXzGBDQXM8RG_7JjgiuS0CLOh8DUa7as=w300-rw", "Google", "com.google.android.googlequicksearchbox"));
 
         details.add(new SectionTitle("Career Highlights"));
 
