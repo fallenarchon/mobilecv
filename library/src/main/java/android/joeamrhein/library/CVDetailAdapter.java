@@ -12,6 +12,7 @@ public class CVDetailAdapter extends AbsDelegationAdapter<CVDetail[]> {
     public static final int COMPANY_TITLE_VIEW_TYPE = 1;
     public static final int WORK_HIGHLIGHT_ENTRY_VIEW_TYPE = 2;
     public static final int EDUCATION_ENTRY_VIEW_TYPE = 3;
+    public static final int PLAY_STORE_LINK_VIEW_TYPE = 4;
 
 
     public CVDetailAdapter(Context context, CVDetail[] items) {
@@ -22,6 +23,7 @@ public class CVDetailAdapter extends AbsDelegationAdapter<CVDetail[]> {
         delegatesManager.addDelegate(new CompanyTitleDelegate(inflater, COMPANY_TITLE_VIEW_TYPE));
         delegatesManager.addDelegate(new WorkHighlightEntryDelegate(inflater, WORK_HIGHLIGHT_ENTRY_VIEW_TYPE));
         delegatesManager.addDelegate(new EducationEntryDelegate(inflater, EDUCATION_ENTRY_VIEW_TYPE));
+        delegatesManager.addDelegate(new PlayStoreLinkDelegate(context, PLAY_STORE_LINK_VIEW_TYPE));
     }
 
 

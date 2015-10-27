@@ -74,9 +74,6 @@ public class MobileCVActivity extends AppCompatActivity {
 
         if (extras != null) {
             mCollapsingToolbarLayout.setTitle(extras.getString(EXTRA_NAME, ""));
-            mCollapsingToolbarLayout
-                    .setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
-
 
             final ImageView image = (ImageView) findViewById(R.id.image);
             Picasso.with(this).load(extras.getString(EXTRA_HERO_IMG_URL, ""))
